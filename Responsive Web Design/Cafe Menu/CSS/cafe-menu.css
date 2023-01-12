@@ -1,0 +1,79 @@
+h1, h2, p {
+    text-align: center;
+}
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif; /*This changes all the body's font to sans-serif.*/
+    padding: 20px;
+}
+h1, h2 {
+    font-family: Impact, serif; /*This font-family only applies to h1 and h2 values.*/ /*Serif is a fallback.  Fallbacks are used in instances where the initial is not found/available.*/
+}
+h1 {
+    font-size: 40px;
+    margin-top: 0; /*This will remove default top margin in order to match the space between footer and the bottom of our menu.*/
+    margin-bottom: 15px; /*To remove some vertical space between h1 and established.*/
+}
+h2 {
+    font-size: 30px;
+}
+.established {
+    font-style: italic;
+}
+.menu { 
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; /*This value adds space between margin and text.*/
+    max-width: 500px; /*This value prevents our menu from growing too wide on large screens.*/
+}
+.item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px; /*This will change the space between menu items.*/
+    font-size: 18px;
+}
+.flavor, .dessert {
+    text-align: left;
+    width: 75%;
+}
+.price {
+    text-align: right;
+    width: 25%;
+}
+hr { 
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+.bottom-line { /*Since the last p element was to close to the second hr, this selector will make it identical to the first one.*/
+    margin-top: 25px;
+}
+
+/*-----FOOTER-----*/
+footer {
+    font-size: 14px;
+}
+a { 
+    color: black;
+}
+a:visited { /*Applies once the link has been visited by the user.*/
+    color: black;
+}
+a:hover { /*Applies when the mouse hovers over our text.*/
+    color: brown;
+}
+a:active { /*Applies when the user clicks the link.*/
+    color: brown;
+}
+.address {
+    margin-bottom: 5px;
+}
+/*-----Images-----*/
+img {
+    display: block; /*To make the image behave like a block.level element.*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+}

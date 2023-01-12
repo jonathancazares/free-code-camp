@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+}
+.marker {
+    height: 25px; /*Since the marker doesn't have any height (or width) by default, it needs to be set manually.*/
+    width: 200px;
+    margin: 10px auto; /*When the shorthand margin property has two values, it sets margin-top and margin-bottom to the first value, and margin-left and margin-right to the second value.*/
+}
+.red { /*Multiple classes can be added to an element. In this case, the div will have both marker and color attributes.*/
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27)); /*Using a linear-gradient function with different shades of red to make the markers look more realistic.*/
+}
+.green {
+    background: linear-gradient(rgb(85, 122, 14), rgb(113, 245, 62), rgb(17, 108, 49));
+}
+.blue {
+    background: linear-gradient(rgb(10, 66, 72) 0%, rgb(61, 113, 245), rgb(0, 0, 255));
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+
+/*Notes:
+1. Primary colos are colors that, when combined, create pure white.
+2. Secondary colors are the colors you get when you combine primary colors.
+3. Tertiary colors are created by combining a primary with a nearby secondary color (full saturation of one with half saturation of another).
+4. Two colors that are opposite from each other on the color wheel are called complementary colors. 
+    4.1 If two complementary colors are combined, they produce gray. But when they are placed side-by-side, these colors produce strong visual contrast and appear brighter.
+5. The hsl() function accepts three values: a number from 0 to 360 for hue, a % from 0 to 100 for saturation, and a percentage from 0 to 100 for lightness.
+    Hue is like a color wheel: red is at 0 degrees, green at 120, and blue at 240.
+    5.2 Saturation is the intensity of a color from 0%, or gray, to 100% for pure color. 
+    5.3 Lightness is how bright a color apperars, from 0% (complete black) to 100% (complete white), with 50% being neutral.  
+6. linear-gradient() basic syntax: linear-grandient(gradientDirection, color1, color2, ...)
+    6.1 Color-stops allow you to fine-tune where colors are place along the gradient line. You can use length units like px or percentages after the color value. e.g red 90%
+*/
